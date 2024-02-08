@@ -1,7 +1,7 @@
 {
     "auth": {
-        "username": "rokesh_kBNxyo",
-        "access_key": "RCxcbwTxyfduGX9AhJW4"
+        "username": "username",
+        "access_key": "key"
     },
     "browsers": [
         {
@@ -20,7 +20,8 @@
         "exclude": [],
         "parallels": "1",
         "npm_dependencies": {
-            "typescript": "~5.3.2"
+            "typescript": "~5.3.2",
+            "cypress": "^13.0.0"
         },
         "package_config_options": {},
         "headless": true
