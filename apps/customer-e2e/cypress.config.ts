@@ -4,10 +4,7 @@ import { defineConfig } from 'cypress';
 
 export default defineConfig({
   e2e: {
-    ...nxE2EPreset(__filename, {
-      cypressDir: 'src',
-      webServerCommands: { default: 'nx run customer:start' },
-    }),
-    baseUrl: 'http://localhost:3000',
+    ...nxE2EPreset(__dirname),
+    baseUrl: 'https://www.browserstack.com/',
   },
 });

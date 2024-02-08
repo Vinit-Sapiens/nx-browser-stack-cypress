@@ -2,11 +2,29 @@
   "name": "customer-e2e",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/customer-e2e/src",
+  "projectType": "application",
   "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/customer-e2e/cypress.config.ts",
+        "testingType": "e2e"
+      }
+    },
     "lint": {
-      "executor": "@nx/eslint:lint"
+      "executor": "@nx/eslint:lint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "apps/customer-e2e/**/*.{js,ts}"
+        ]
+      }
     }
   },
   "tags": [],
-  "implicitDependencies": ["customer"]
+  "implicitDependencies": [
+    "customer"
+  ]
 }
