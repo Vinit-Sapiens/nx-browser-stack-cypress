@@ -4,6 +4,16 @@
   "sourceRoot": "apps/customer-e2e/src",
   "projectType": "application",
   "targets": {
+    "browserstack": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "cd apps/customer-e2e/",
+          "yarn browserstack-cypress run --sync --cf ./apps/customer-e2e/browserstack.json"
+        ],
+        "parallel": false
+      }
+    },
     "e2e": {
       "executor": "@nx/cypress:cypress",
       "options": {

@@ -1,0 +1,35 @@
+{
+    "auth": {
+        "username": "rokesh_kBNxyo",
+        "access_key": "RCxcbwTxyfduGX9AhJW4"
+    },
+    "browsers": [
+        {
+            "browser": "chrome",
+            "os": "Windows 10",
+            "versions": [
+                "latest",
+                "latest-1"
+            ]
+        }
+    ],
+    "run_settings": {
+        "cypress_config_file": "./apps/customer-e2e/cypress.config.ts",
+        "project_name": "Test-Setup",
+        "build_name": "setup",
+        "exclude": [],
+        "parallels": "1",
+        "npm_dependencies": {
+            "typescript": "~5.3.2"
+        },
+        "package_config_options": {},
+        "headless": true
+    },
+    "connection_settings": {
+        "local": false,
+        "local_identifier": null,
+        "local_mode": null,
+        "local_config_file": null
+    },
+    "disable_usage_reporting": false
+}
