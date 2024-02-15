@@ -8,23 +8,32 @@
             "browser": "chrome",
             "os": "Windows 10",
             "versions": [
-                "latest",
-                "latest-1"
+                "latest"
+            ]
+        },
+        {
+            "browser": "webkit",
+            "os": "OS X Big Sur",
+            "versions": [
+                "latest"
             ]
         }
     ],
     "run_settings": {
-        "cypress_config_file": "./apps/customer-e2e/cypress.config.ts",
+        "cypress_config_file": "./cypress.config.ts",
         "project_name": "Test-Setup",
-        "build_name": "setup",
+        "build_name": "setup new",
         "exclude": [],
         "parallels": "1",
         "npm_dependencies": {
             "typescript": "~5.3.2",
-            "cypress": "^13.0.0"
+            "cypress": "^13.0.0",
+            "nx": "latest",
+            "@nx/cypress": "18.0.3"
         },
         "package_config_options": {},
-        "headless": true
+        "headless": true,
+        "home_directory":"../../"
     },
     "connection_settings": {
         "local": false,
