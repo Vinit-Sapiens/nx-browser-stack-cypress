@@ -4,7 +4,6 @@
   "license": "MIT",
   "scripts": {},
   "private": true,
-  "type": "module",
   "dependencies": {
     "@nx/nx-win32-x64-msvc": "^18.0.4",
     "next": "13.0.0",
