@@ -24,7 +24,7 @@
         "project_name": "Test-Setup",
         "build_name": "setup new",
         "exclude": [],
-        "parallels": "1",
+        "parallels": "2",
         "npm_dependencies": {
             "typescript": "~5.3.2",
             "cypress": "^13.0.0",
